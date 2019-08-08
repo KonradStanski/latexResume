@@ -1,0 +1,130 @@
+% SETTINGS ###########################################################################
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=0.7cm,right=9.5cm,marginparwidth=8.3cm,marginparsep=0.5cm,top=0.9cm,bottom=0.5cm}
+
+% Change the font if you want to, depending on whether
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+% Change the colours if you want to
+\definecolor{Black}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\colorlet{heading}{Black}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{SlateGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+% DOCUMENT ###########################################################################
+\begin{document}
+\name{John Doe}
+\tagline{Searching for: 8 Month Coop Winter 2020}
+\photo{2cm}{coop_logo}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mailto:sample@university.com}{sample@university.com}
+  \github{https://www.github.com/johndoe}{github.com/johndoe}
+  \homepage{https://johndoe.com}{johndoe.com}\\[5pt]
+  % \mailaddress{Address, Street, 00000 County}
+  \location{City, State\kern 1pc}
+  \phone{\href{tel:12345678901}{+1 234 567 8901\kern 1em}}
+  % \twitter{@marissamayer}
+  \linkedin{https://www.linkedin.com/in/johndoe}{linkedin.com/in/johndoe}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+
+% PROJECTS ###########################################################################
+\cvsection[sidebar]{Projects}
+\cvevent{\href{https://github.com/project}{Sample Project [GitHub]}}{}{Month Year -- Ongoing}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  \item ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  \item \underline{\textit{Utilized:}} Skills, Skills, Skills
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/project}{Sample Project [GitHub]}}{}{Month Year -- Ongoing}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  \item ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  \item \underline{\textit{Utilized:}} Skills, Skills, Skills
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/project}{Sample Project [GitHub]}}{}{Month Year -- Ongoing}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  \item ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  \item \underline{\textit{Utilized:}} Skills, Skills, Skills
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/project}{Sample Project [GitHub]}}{}{Month Year -- Ongoing}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  \item ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  \item \underline{\textit{Utilized:}} Skills, Skills, Skills
+\end{itemize}
+\divider\small
+
+
+% EXPERIENCE #########################################################################
+\cvsection{Experience}
+\cvevent{Sample Internship}{Company}{Month Year -- Ongoing}{City, State}
+\begin{itemize}
+\item Vitae suscipit tellus mauris a. At auctor urna nunc id cursus. Magna sit amet purus gravida
+\item quis blandit turpis. Libero nunc consequat interdum varius. Tincidunt
+\item ornare massa eget egestas purus. Massa enim nec dui nunc
+\end{itemize}
+\divider\small
+
+\cvevent{Sample Internship}{Company}{Month Year -- Ongoing}{City, State}
+\begin{itemize}
+\item Vitae suscipit tellus mauris a. At auctor urna nunc id cursus. Magna sit amet purus gravida
+\item quis blandit turpis. Libero nunc consequat interdum varius. Tincidunt
+\item ornare massa eget egestas purus. Massa enim nec dui nunc
+\end{itemize}
+\divider\small
+
+\cvevent{Sample Internship}{Company}{Month Year -- Ongoing}{City, State}
+\begin{itemize}
+\item Vitae suscipit tellus mauris a. At auctor urna nunc id cursus. Magna sit amet purus gravida
+\item quis blandit turpis. Libero nunc consequat interdum varius. Tincidunt
+\item ornare massa eget egestas purus. Massa enim nec dui nunc
+\end{itemize}
+
+\clearpage
+\nocite{*}
+\end{document}
