@@ -16,3 +16,5 @@ https://github.com/liantze/AltaCV
 - The sidebar.tex file contains content that apears in the right sidebar
 - You can change the margins (I have obnoxiously large ones) in the 5th line of resume.tex
 - custom functions are defined in the altacv.cls file
+
+![Text](latexResume.png)
