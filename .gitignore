@@ -1,0 +1,11 @@
+*.log
+*.aux
+*.xml
+*.bcf
+*.out
+*.gz
+*.fls
+*.bbl
+*.blg
+*.fdb_latexmk
+resume.pdf
